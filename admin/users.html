@@ -55,26 +55,23 @@
         <section class="page-section active fade-in" id="page-users">
           <div class="card admin-menu-card">
             <div class="filter-row">
-              <div class="gap-10">
-              <div class="input-group" style="flex:1; max-width:300px;">
+              <div class="input-group">
                 <i class="bi bi-search input-icon"></i>
                 <input type="text" class="form-control" id="userSearch" placeholder="Cari nama / email..."
                   oninput="filterUsers()">
               </div>
-              <div style="display:flex; gap:10px;">
-                <select class="form-control" id="userStatusFilter" onchange="filterUsers()" style="max-width:160px;">
-                  <option value="">Semua Status</option>
-                  <option value="Active">Aktif</option>
-                  <option value="Inactive">Nonaktif</option>
-                  <option value="Pending">Menunggu Persetujuan</option>
-                </select>
-                <select class="form-control" id="userRoleFilter" onchange="filterUsers()" style="max-width:140px;">
-                  <option value="">Semua Role</option>
-                  <option value="Employee">Employee Only</option>
-                  <option value="Admin">Admin Only</option>
-                </select>
-              </div>
-</div>
+              <select class="form-control" id="userStatusFilter" onchange="filterUsers()">
+                <option value="">Semua Status</option>
+                <option value="Active">Aktif</option>
+                <option value="Inactive">Nonaktif</option>
+                <option value="Pending">Menunggu Persetujuan</option>
+              </select>
+              <select class="form-control" id="userRoleFilter" onchange="filterUsers()">
+                <option value="">Semua Role</option>
+                <option value="Employee">Employee Only</option>
+                <option value="Admin">Admin Only</option>
+              </select>
+            </div>
                           <div class="admin-card-actions">
               <button class="btn btn-sm btn-primary" onclick="openAddUser()"><i class="bi bi-person-plus-fill"></i>
                 Tambah Karyawan</button>

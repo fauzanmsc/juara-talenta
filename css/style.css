@@ -1170,7 +1170,7 @@ thead th {
   background: var(--bg-card) !important;
   z-index: 10;
   padding: 8px 4px;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 11px;
   letter-spacing: .6px;
@@ -1950,9 +1950,9 @@ html[data-theme="dark"] .sidebar-link.active {
 }
 
 .filter-row .form-control {
-
   flex: 1;
   max-width: 100%;
+  height: 40px;
 }
 
 /* === STATUS DOTS === */
@@ -6535,7 +6535,7 @@ table.table-modern tbody td:last-child {
 
 @media (max-width: 576px) {
   .insight-banner-wrapper {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 

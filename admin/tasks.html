@@ -96,36 +96,31 @@
           </div>
 
           <div class="card admin-menu-card">
-            <div class="admin-card-actions">
-              <button class="btn btn-sm btn-primary" onclick="openAddTaskModal()"><i class="bi bi-plus-circle-fill"></i>
-                Tambah Tugas</button>
-            </div>
+
 
             <!-- Filters -->
             <div class="filter-row">
+              <div style="display: flex; gap: 10px;"">
               <input type="date" class="form-control" id="taskFilterStart" style="max-width:140px;">
               <input type="date" class="form-control" id="taskFilterEnd" style="max-width:140px;">
               <input type="text" class="form-control" id="taskFilterName" placeholder="Nama karyawan..."
-                style="flex:1;">
-              <select class="form-control" id="taskFilterCategory" style="max-width:140px;">
-                <option value="">Semua Kategori</option>
-                <option value="Development">Development</option>
-                <option value="Operations">Operations</option>
-                <option value="Marketing">Marketing</option>
-                <option value="Administrative">Administrative</option>
-                <option value="Sales">Sales</option>
-                <option value="Other">Lain-lain</option>
-              </select>
-              <select class="form-control" id="taskFilterDivision" style="max-width:140px;">
+                style="flex:1; max-width: 350px;">
+
+              <select class="form-control" id="taskFilterDivision" style="max-width:300px;">
                 <option value="">Semua Divisi</option>
               </select>
-              <select class="form-control" id="taskFilterStatus" style="max-width:140px;">
+              <select class="form-control" id="taskFilterStatus" style="max-width:300px;">
                 <option value="">Semua Status</option>
                 <option value="Pending">Pending</option>
                 <option value="In Progress">In Progress</option>
                 <option value="Completed">Completed</option>
               </select>
-              <button class="btn btn-primary" onclick="loadAdminTasks()"><i class="bi bi-search"></i> Cari</button>
+              <button class="btn btn-primary" onclick="loadAdminTasks()"><i class="bi bi-search"></i></button>
+</div>
+                          <div class="admin-card-actions">
+              <button class="btn btn-sm btn-primary" onclick="openAddTaskModal()"><i class="bi bi-plus-circle-fill"></i>
+                Tambah Tugas</button>
+            </div>
             </div>
 
             <!-- Simplified Table for High-Fidelity Retina & Mobile Layouts -->
